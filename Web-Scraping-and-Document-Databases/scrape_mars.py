@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[77]:
+# In[1]:
 
 
 from splinter import Browser
@@ -12,7 +12,7 @@ import pandas as pd
 from pprint import pprint
 
 
-# In[81]:
+# In[2]:
 
 
 def init_browser():
@@ -23,7 +23,7 @@ def init_browser():
 
 # # NASA Mars News
 
-# In[82]:
+# In[3]:
 
 
 def mars_news():
@@ -50,15 +50,14 @@ def mars_news():
     
 
 
-# In[83]:
-
+# In[4]:
 
 
 
 
 # # JPL Mars Space Images - Featured Image
 
-# In[84]:
+# In[5]:
 
 
 def mars_image():
@@ -81,15 +80,14 @@ def mars_image():
     return featured_img_url
 
 
-# In[85]:
-
+# In[6]:
 
 
 
 
 # # Mars Weather
 
-# In[86]:
+# In[7]:
 
 
 def mars_weather():
@@ -108,15 +106,14 @@ def mars_weather():
     return mars_weather_data
 
 
-# In[87]:
-
+# In[8]:
 
 
 
 
 # # Mars Facts
 
-# In[88]:
+# In[9]:
 
 
 def mars_facts():
@@ -134,15 +131,14 @@ def mars_facts():
     return stats_html
 
 
-# In[89]:
-
+# In[10]:
 
 
 
 
 # # Mars Hemispheres
 
-# In[90]:
+# In[11]:
 
 
 def mars_hemispheres():
@@ -175,13 +171,12 @@ def mars_hemispheres():
     return hemi_urls
 
 
-# In[91]:
+# In[12]:
 
 
 
 
-
-# In[92]:
+# In[15]:
 
 
 def scrape():
@@ -201,8 +196,7 @@ def scrape():
     return mars_info
 
 
-# In[93]:
-
+# In[16]:
 
 
 
