@@ -1,0 +1,128 @@
+/* Set style for body of page  */
+body{
+    background-color: #ededed;
+}
+
+/* Set style of title elements on page  */
+.title{
+    color: #0bada6;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    padding-top: 10px;
+}
+
+/* Set style of navbar on page...z-index allows dropdown to appear on front  */
+.navbar{
+    background-color: white;
+    font-size: 20px;
+    height: 70px;
+    z-index: 9999  
+}
+
+/* Set style of the navbar dropdown on the page  */
+#navbarNavDropdown{
+    background-color: white;    
+}
+
+/* Set style of the navbar brand on the page  */
+.navigation .navbar-brand{
+    color: white;
+    background-color: #0bada6;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-left: 75px;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;   
+}
+
+/* Set style of the paragraph elements on page  */
+p{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 14px;
+}
+
+/* Set style of the box elements on the page  */
+.box{
+    background-color: white;
+    margin-top: 25px;
+    margin-bottom: 30px;
+    padding-top: 5px;
+    padding-right: 10px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+}
+
+/* set style for large box on comparison page  */
+.largebox{
+    background-color: white;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    margin-left: 15px;
+    padding-left: 50px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 15px;
+    width: 100%;
+}
+
+/* Set style of the footer on the page  */
+.footer{
+    background-color: #666666;
+    border-top-style: solid;
+    border-top-width: 10px;
+    border-top-color: #0bada6;
+    color: white;
+    height: 70px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 15px;
+    text-align: center;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    padding-top: 20px;
+    margin-top: 20px;
+}
+
+/* Set images to be centered in their block  */
+.center-block {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+/* Set image style for front page  */
+.viz{
+    width: 70% !important;
+    height: 70% !important;
+    float: left;
+}
+
+/* Set style for media queries  */
+@media(max-width: 1000px){
+    .navbar-expand-lg{
+    background-color: #0bada6 !important;
+    }
+    .navbar{
+        max-height: none;
+        padding: inherit;
+       
+    }
+    .navbar div{
+        margin: inherit;
+        background-color: white;
+        
+    }
+    .navbar-brand{
+        padding: 10px !important;
+        font-size: 30px;     
+    }
+    button{
+        margin-top: 0px;
+        margin-right: 10px;
+        margin-bottom: 0px;
+        padding: 0px 10px 0px 10px;
+    }
+}
