@@ -28,9 +28,8 @@ let filterButton = d3.select('#filter-btn');
 // Use d3 to filter the on the date and save in filterData letiable 
 filterButton.on('click', function() {
     d3.event.preventDefault();
-    tbody.selectAll('*').remove();
     let dateFilter = d3.select("#datetime").property('value');
-    let filterData = tableData.filter(x => x.datetime === dateFilter);
+    let filterData = tableData.filter(item => item.datetime === dateFilter);
 
    // Use d3 to update each cell's text with filtered data
     filterData.forEach((tableData)=> {
