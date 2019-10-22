@@ -56,13 +56,18 @@ p.card-text {
 }
 
 /* Hemisphere image style  */
-.hem_image {
-    width: 800px;
-    height: 800px;
+.hemi_image {
+    width: 750px;
+    height: 750px;
 }
 
 /* h4 Card Text style  */
 h4.card-text {
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 25px;
+}
+
+/* Thumbnail style  */
+.thumbnail {
+    background: rgb(177, 174, 174);
 }
