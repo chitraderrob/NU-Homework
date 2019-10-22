@@ -20,7 +20,7 @@
         </div>
         <!-- News  -->
         <div class="row">
-            <div class="col-md-12" id="mars-news">
+            <div class="col-md-12">
                 <h2>Latest Mars News</h2>
                 <h4>{{ mars.Mars_News[0].Title }} </h4>
                 <p>{{ mars.Mars_News[0].Description }}</p>
@@ -34,35 +34,31 @@
                 <img src="{{mars.Featured_Image}}" class="img-featured" alt="Featured Mars Image">
             </div>
             <!-- Weather  -->
-            <div class="col-md-4" id="mars-weather">
-                <div class="card border secondary">
-                    <div class="card body">
-                        <h3 class="card title">Mars Weather</h3>
-                        <p class= "card text">{{ mars.Mars_Weather }}</p>
-                    </div>
+            <div class="col-md-4">
+                <div class="card-body">
+                    <h3 class="card-title">Mars Weather</h3>
+                    <p class= "card-text">{{ mars.Mars_Weather }}</p>
                 </div>
             </div>
-            <hr>
+            <hr/>
             <!-- Facts  -->
-            <div class="col-md-4" id="mars-facts">
-                <div class="card border secondary">
-                    <div class="card body">
-                        <h3 class= "card title">Mars Facts</h3>
-                        <p class= "card text">{{mars.Mars_Facts | safe}}</p>
-                    </div>
+            <div class="col-md-4">
+                <div class="card-body">
+                    <h3 class= "card-title">Mars Facts</h3>
+                    <p class= "card-text">{{mars.Mars_Facts | safe}}</p>
                 </div>
             </div>
             <!-- Hemispheres  -->
             <div class='row justify-content-center'>
-                <div class="col-md-12" id="mars-hemi">
+                <div class="col-md-12">
                     <h2 class= "text-center">Mars Hemispheres</h2>
                 </div>
                     {% for hemi in mars.Mars_Hemispheres %}
                         <div class="col-md-6">
                             <div class="thumbnail">
                                 <img class= "hemi_image" src="{{ hemi.img_url }}">
-                                <div class="card body">
-                                    <b class= "card text"> {{ hemi.title }}</b>
+                                <div class="card-body">
+                                    <h4 class="card-text"> {{ hemi.title }}</h4>
                                 </div>
                             </div>
                         </div>
